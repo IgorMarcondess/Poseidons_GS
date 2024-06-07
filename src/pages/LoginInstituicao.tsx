@@ -18,7 +18,7 @@ const LoginIN = () => {
         }
 
         try {
-            const response = await fetch('https://sua-api-java.com/login', {
+            const response = await fetch('http://localhost:8080/Java_GS_Poseidon/rest', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -34,7 +34,7 @@ const LoginIN = () => {
             console.log('Login bem-sucedido:', data);
 
             // Redirecionar para a página específica após o login bem-sucedido
-            window.location.href = '/pagina-especifica';
+            window.location.href = '/LogadoInstituicao';
 
             setIsSubmitted(true);
         } catch (error) {

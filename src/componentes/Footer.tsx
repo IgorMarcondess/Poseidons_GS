@@ -6,7 +6,7 @@ const Footer = () =>{
         <>
             <footer className="Fbase-azul">
                 <section className="Forganizacao_geral">
-                    <div><img className="Fposeidons" src={ Poseidons.src }/></div>
+                    <Link href="./Pagina_inicial"><div><img className="Fposeidons" src={ Poseidons.src }/></div></Link>
                     <div className="Fgithub">
                     <div className="button-icon">
                         <div className="icon">
@@ -17,10 +17,12 @@ const Footer = () =>{
                             ></path>
                             </svg>
                         </div>
+                        <Link href="https://github.com/Marcondezz/Poseidons_GS">
                         <div className="cube">
-                            <span className="side front">Passe o mouse</span>
+                            <span className="side front">GitHub</span>
                             <span className="side top">check on GITHUB</span>
                         </div>
+                        </Link>
                         </div>
                     </div>
                     <div className="socials-media">

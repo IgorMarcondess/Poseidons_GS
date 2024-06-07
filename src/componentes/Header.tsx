@@ -25,12 +25,6 @@ const Header = () => {
                             <Link href="/LoginInstituicao"><h3 className="Htitulo_h3">Instituição</h3></Link>
                             <Link href="/LoginColaborador"><h3 className="Htitulo_h3">Colaborador</h3></Link>
                         </div>
-                        <input type="checkbox" id="checkbox"/>
-                            <label htmlFor="checkbox" className="toggle" onClick={toggleMenu}>
-                                <div className="bars" id="bar1"></div>
-                                <div className="bars" id="bar2"></div>
-                                <div className="bars" id="bar3"></div>
-                            </label>
                     </div>
                 </section>
             </header>

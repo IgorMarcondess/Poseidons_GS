@@ -33,8 +33,7 @@ const LoginColaborador = () => {
             const data = await response.json();
             console.log('Login bem-sucedido:', data);
     
-            // Redirecionar para a página específica após o login bem-sucedido
-            window.location.href = '/pagina-especifica';
+            window.location.href = '/LogadoColaborador';
         } catch (error) {
             setError('Erro ao realizar login. Verifique suas credenciais e tente novamente.');
         }

@@ -14,6 +14,7 @@ interface FormData {
 interface Errors {
     email?: string;
     password?: string;
+    cnpj?: string;
 }
 
 const Instituicao = () => {
@@ -37,12 +38,19 @@ const Instituicao = () => {
         if (formData.password.length < 6) {
             formErrors.password = "A senha deve ter pelo menos 6 caracteres";
         }
+        if (!/^\d{14,}$/.test(formData.cnpj)) {
+            formErrors.cnpj = "CNPJ deve conter apenas números e ter pelo menos 14 dígitos";
+        }
         setErrors(formErrors);
         return Object.keys(formErrors).length === 0;
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
+        // Allow only numeric input for CNPJ
+        if (name === "cnpj" && !/^\d*$/.test(value)) {
+            return;
+        }
         setFormData({
             ...formData,
             [name]: value
@@ -87,7 +95,8 @@ const Instituicao = () => {
                     </div>
                     <div className="field">
                         <label className="label-trailfinder" htmlFor="CNPJ">CNPJ:</label>
-                        <input className="input" name="cnpj" type="number" placeholder="CNPJ" value={formData.cnpj} onChange={handleChange} />
+                        <input className="input" name="cnpj" type="text" placeholder="CNPJ" value={formData.cnpj} onChange={handleChange} />
+                        {errors.cnpj && <span className="error">{errors.cnpj}</span>}
                     </div>
                     <div className="field">
                         <label className="label-trailfinder" htmlFor="email">Informe seu e-mail:</label>
@@ -96,11 +105,11 @@ const Instituicao = () => {
                     </div>
                     <div className="field">
                         <label className="label-trailfinder" htmlFor="CEP">CEP:</label>
-                        <input className="input" name="cep" type="number" placeholder="CEP" value={formData.cep} onChange={handleChange} />
+                        <input className="input" name="cep" type="text" placeholder="CEP" value={formData.cep} onChange={handleChange} />
                     </div>
                     <div className="field">
                         <label className="label-trailfinder" htmlFor="telefone">Informe o telefone:</label>
-                        <input className="input" name="telefone" type="number" placeholder="telefone" value={formData.telefone} onChange={handleChange} />
+                        <input className="input" name="telefone" type="text" placeholder="telefone" value={formData.telefone} onChange={handleChange} />
                     </div>
                     <div className="field">
                         <label className="label-trailfinder" htmlFor="password">Password:</label>

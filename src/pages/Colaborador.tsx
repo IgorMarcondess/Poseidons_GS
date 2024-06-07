@@ -4,7 +4,7 @@ import React, { useState } from "react";
 const Colaborador = () => {
     const [formData, setFormData] = useState({
         name: "",
-        cnpj: "",
+        cpf: "",
         email: "",
         cep: "",
         telefone: "",
@@ -17,6 +17,7 @@ const Colaborador = () => {
     interface Errors {
         email?: string;
         password?: string;
+        cpf?: string;
     }
 
     const [errors, setErrors] = useState<Errors>({});
@@ -29,12 +30,19 @@ const Colaborador = () => {
         if (formData.password.length < 6) {
             formErrors.password = "A senha deve ter pelo menos 6 caracteres";
         }
+        if (!/^\d{11,}$/.test(formData.cpf)) {
+            formErrors.cpf = "CPF deve conter apenas números e ter pelo menos 11 dígitos";
+        }
         setErrors(formErrors);
         return Object.keys(formErrors).length === 0;
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
         const { name, value } = e.target;
+        // Allow only numeric input for CPF
+        if (name === "cpf" && !/^\d*$/.test(value)) {
+            return;
+        }
         setFormData({
             ...formData,
             [name]: value
@@ -78,8 +86,9 @@ const Colaborador = () => {
                         <input className="input" name="name" type="text" placeholder="Nome" value={formData.name} onChange={handleChange} />
                     </div>
                     <div className="field">
-                        <label className="label-trailfinder" htmlFor="CNPJ">CPF:</label>
-                        <input className="input" name="cnpj" type="number" placeholder="CPF" value={formData.cnpj} onChange={handleChange} />
+                        <label className="label-trailfinder" htmlFor="CPF">CPF:</label>
+                        <input className="input" name="cpf" type="text" placeholder="CPF" value={formData.cpf} onChange={handleChange} />
+                        {errors.cpf && <span className="error">{errors.cpf}</span>}
                     </div>
                     <div className="field">
                         <label className="label-trailfinder" htmlFor="email">Informe seu e-mail:</label>
@@ -88,11 +97,11 @@ const Colaborador = () => {
                     </div>
                     <div className="field">
                         <label className="label-trailfinder" htmlFor="CEP">CEP:</label>
-                        <input className="input" name="cep" type="number" placeholder="CEP" value={formData.cep} onChange={handleChange} />
+                        <input className="input" name="cep" type="text" placeholder="CEP" value={formData.cep} onChange={handleChange} />
                     </div>
                     <div className="field">
                         <label className="label-trailfinder" htmlFor="telefone">Informe o telefone:</label>
-                        <input className="input" name="telefone" type="number" placeholder="telefone" value={formData.telefone} onChange={handleChange} />
+                        <input className="input" name="telefone" type="text" placeholder="telefone" value={formData.telefone} onChange={handleChange} />
                     </div>
                     <div className="field">
                         <label className="label-trailfinder" htmlFor="password">Password:</label>

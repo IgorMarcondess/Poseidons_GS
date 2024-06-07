@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+:root{
+    --azul-escuro: #023E8A;
+    --branco: #f6fff8;
+   --titulo: "Roboto Condensed", "Sans-serif";
+   --texto-comum: "Source Sans 3", "Sans-serif";
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 439px){
+    .organizacao_titulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5rem;
+    }
+    .logo_titulo{
+        width: 2rem;
+    }
+    .Orgtexto_explicacaoPI{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+    .texto_explicacaoPI{
+        font-family: var(--titulo);
+        font-size: .9rem;
+        text-align: center;
+    }
+    .titulo_paginaInicial{
+        font-family: var(--titulo);
+        font-size: 6vw;
+    }
+    .organizacao_ongs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    .navegacao-personagens{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-block: 2.5rem;
+    }
+    .conjunto-imagens{
+        background-color: var(--azul-escuro);
+        width: 90vw;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .personagem-personagens{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+    }
+    .organizacao-imagens{
+        display:flex;
+        justify-content: center;
+    }
+    .imagem_PI{
+        width: 90vw;
+    }
+    .texto-personagens{
+        padding: 4vw;
+    }
+    .titulo-personagens{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--titulo);
+        color: var(--branco)
+    }
+    .subtitulo-personagens{
+        font-size: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--texto-comum);
+        color: var(--branco);
+        margin-bottom: 1vh;
+    }
+    .texto-esquerda{
+        font-family: var(--texto-comum);
+        color: var(--branco);
+    }
+}
+@media (min-width: 439px) and (max-width: 580px){
+    .organizacao_titulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5rem;
+    }
+    .logo_titulo{
+        width: 2rem;
+    }
+    .Orgtexto_explicacaoPI{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+    .texto_explicacaoPI{
+        font-family: var(--titulo);
+        font-size: .9rem;
+        text-align: center;
+    }
+    .titulo_paginaInicial{
+        font-family: var(--titulo);
+        font-size: 6vw;
+    }
+    .organizacao_ongs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    .navegacao-personagens{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-block: 2.5rem;
+    }
+    .conjunto-imagens{
+        background-color: var(--azul-escuro);
+        width: 90vw;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .personagem-personagens{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+    }
+    .organizacao-imagens{
+        display:flex;
+        justify-content: center;
+    }
+    .imagem_PI{
+        width: 90vw;
+    }
+    .texto-personagens{
+        padding: 4vw;
+    }
+    .titulo-personagens{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--titulo);
+        color: var(--branco)
+    }
+    .subtitulo-personagens{
+        font-size: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--texto-comum);
+        color: var(--branco);
+        margin-bottom: 1vh;
+    }
+    .texto-esquerda{
+        font-family: var(--texto-comum);
+        color: var(--branco);
+    }
+}
+@media (min-width: 580px) and (max-width: 840px){
+    .organizacao_titulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5rem;
+    }
+    .logo_titulo{
+        width: 2rem;
+    }
+    .Orgtexto_explicacaoPI{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+    .texto_explicacaoPI{
+        font-family: var(--titulo);
+        font-size: .9rem;
+        text-align: center;
+    }
+    .titulo_paginaInicial{
+        font-family: var(--titulo);
+        font-size: 6vw;
+    }
+    .organizacao_ongs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    .navegacao-personagens{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-block: 2.5rem;
+    }
+    .conjunto-imagens{
+        background-color: var(--azul-escuro);
+        width: 90vw;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .personagem-personagens{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+    }
+    .organizacao-imagens{
+        display:flex;
+        justify-content: center;
+    }
+    .imagem_PI{
+        width: 90vw;
+    }
+    .texto-personagens{
+        padding: 4vw;
+    }
+    .titulo-personagens{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--titulo);
+        color: var(--branco)
+    }
+    .subtitulo-personagens{
+        font-size: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--texto-comum);
+        color: var(--branco);
+        margin-bottom: 1vh;
+    }
+    .texto-esquerda{
+        font-family: var(--texto-comum);
+        color: var(--branco);
+    }
+}
+@media (min-width: 841px) and (max-width: 1440px){
+    .organizacao_titulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5rem;
+    }
+    .logo_titulo{
+        width: 3rem;
+    }
+    .Orgtexto_explicacaoPI{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-inline: 2rem;
+        padding-inline: 6rem;
+        padding-block: 2rem;
+    }
+    .texto_explicacaoPI{
+        font-family: var(--titulo);
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .titulo_paginaInicial{
+        font-family: var(--titulo);
+        font-size: 4vw;
+    }
+    .organizacao_ongs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    .navegacao-personagens{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-block: 2.5rem;
+    }
+    .conjunto-imagens{
+        background-color: var(--azul-escuro);
+        width: 40rem;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .personagem-personagens{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+    }
+    .organizacao-imagens{
+        display:flex;
+        justify-content: center;
+    }
+    .imagem_PI{
+        width: 30rem;
+        height: 19rem;
+        margin-left: 3rem;
+    }
+    .texto-personagens{
+        height: 19.2rem;
+        padding: 2rem;
+        
+    }
+    .titulo-personagens{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--titulo);
+        color: var(--branco)
+    }
+    .subtitulo-personagens{
+        font-size: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--texto-comum);
+        color: var(--branco);
+        margin-bottom: 1vh;
+    }
+    .texto-esquerda{
+        font-family: var(--texto-comum);
+        color: var(--branco);
+        margin-top: 1rem;
+    }
+}

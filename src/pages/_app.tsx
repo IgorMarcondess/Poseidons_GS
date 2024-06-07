@@ -9,15 +9,13 @@ import "../globals.css";
 // Importações de componentes
 import Menu from '../componentes/Header'; 
 import Menu1 from "../componentes/Footer"
-import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 
 
 
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
-  const router = useRouter();
-  const isHomePage = router.pathname === '/'; // Verifica se está na HomePage
+  
 
   useEffect(() => {
     const link = document.createElement('link');
@@ -38,7 +36,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
 
   return (
     <SessionProvider session={session}>
-      {/*{!isHomePage && <Header />*/}
+
       <Menu/>
       <Component {...pageProps} />
       <Menu1/>

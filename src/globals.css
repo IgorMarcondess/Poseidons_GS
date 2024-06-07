@@ -299,7 +299,7 @@
 }
 
 @media screen and (max-width: 439px){
-    .card-formulario {
+    .card-formularioCOLABORADOR {
         width: 100vw;
         height: 100vh;
         background: #F4F6FB;
@@ -394,7 +394,7 @@
       }
     }
 @media (min-width: 440px)and (max-width: 580px){
-        .card-formulario {
+        .card-formularioCOLABORADOR {
             width: 42vw;
             height: 70vh;
             background: #e9e9f7;
@@ -495,7 +495,7 @@
           }
 }
 @media (min-width: 580px) and (max-width: 840px){
-    .card-formulario {
+    .card-formularioCOLABORADOR {
         width: 42vw;
         height: 80vh;
         background: #e9e9f7;
@@ -595,9 +595,9 @@
         align-items: center;
 }}
 @media (min-width: 841px) and (max-width: 1440px){
-    .card-formulario {
+    .card-formularioCOLABORADOR {
         width: 42vw;
-        height: 100vh;
+        height: 105vh;
         background: #e9e9f7;
         border: 1px solid white;
         box-shadow: 10px 10px 64px 0px rgba(180, 180, 207, 0.75);
@@ -631,7 +631,6 @@
         font-weight: 500;
         color: white;
         border: none;
-        margin-left: 10%;
       }
       button:hover {
         background-color: #B2BAC8;
@@ -2336,12 +2335,11 @@
       .secao-total{
         display: flex;
         justify-content: center;
-        margin-block: 2rem
+
       }
       .botao-submit{
         display: flex;
         justify-content: center;
-        margin-bottom: 2rem;
       }
       .mensagem-sucesso{
         display: flex;

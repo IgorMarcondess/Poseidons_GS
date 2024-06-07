@@ -1,9 +1,9 @@
 import Link from "next/link"
 import Logo from "../../public/assets/Página Inicial/logo_Azul.png"
-import primeira from "../../public/assets/Página Inicial/ong 1.jpg"
-import segunda from "../../public/assets/Página Inicial/ong 2.jpg"
-import terceira from "../../public/assets/Página Inicial/ong 3.jpg"
-import quarta from "../../public/assets/Página Inicial/ong 4.jpg"
+import primeira from "../../public/assets/Cards/image1.jpg"
+import segunda from "../../public/assets/Cards/image2.jpg"
+import terceira from "../../public/assets/Cards/image3.jpg"
+import quarta from "../../public/assets/Cards/image4.jpg"
 
 const PaginaInicial = () =>{
   return(
@@ -26,7 +26,7 @@ const PaginaInicial = () =>{
       </div>
       <br/>
       <div className="organizacao_ongs">
-        <a className="organizacao-imagens"><img src={ primeira.src } className="imagem_PI"/></a>
+        //<a className="organizacao-imagens"><img src={ primeira.src } className="imagem_PI"/></a>
         <div className="conjunto-imagens">
         <div className="texto-personagens">
                 <h1 className="titulo-personagens">EcoMar</h1>

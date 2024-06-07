@@ -14,7 +14,7 @@ const DisqueDenuncia = () => {
         // Fetch the email from the API when the component mounts
         const fetchRecipientEmail = async () => {
             try {
-                const response = await fetch('http://localhost:8080/Java_GS_Poseidon/rest');
+                const response = await fetch('http://localhost:8080/Java_GS_Poseidon/rest/denuncia');
                 const data = await response.json();
                 setRecipientEmail(data.email);
             } catch (error) {

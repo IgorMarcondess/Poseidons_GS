@@ -52,7 +52,7 @@ const Colaborador = () => {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         if (validate()) {
-            fetch("http://localhost:8080/Java_GS_Poseidon/rest", {
+            fetch("http://localhost:8080/Java_GS_Poseidon/rest/usuario", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -73,7 +73,7 @@ const Colaborador = () => {
     return (
         <>
             <section className="secao-total">
-                <form className="form card-formulario" onSubmit={handleSubmit}>
+                <form className="form card-formularioCOLABORADOR" onSubmit={handleSubmit}>
                     <div className="card_header">
                         <svg className="svg-trailfinder" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                             <path className="svg-trailfinder" fill="none" d="M0 0h24v24H0z"></path>

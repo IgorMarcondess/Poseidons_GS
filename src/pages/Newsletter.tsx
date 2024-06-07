@@ -17,7 +17,7 @@ const Newsletter = () => {
 
         try {
             // Enviar dados para a API Java
-            const response = await fetch('http://localhost:8080/Java_GS_Poseidon/rest', {
+            const response = await fetch('http://localhost:8080/Java_GS_Poseidon/rest/newsletter', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -18,7 +18,7 @@ const LoginIN = () => {
         }
 
         try {
-            const response = await fetch('http://localhost:8080/Java_GS_Poseidon/rest', {
+            const response = await fetch('http://localhost:8080/Java_GS_Poseidon/rest/ong', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

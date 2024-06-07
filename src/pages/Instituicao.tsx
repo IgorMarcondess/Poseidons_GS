@@ -60,7 +60,7 @@ const Instituicao = () => {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         if (validate()) {
-            fetch("http://localhost:8080/Java_GS_Poseidon/rest", {
+            fetch("http://localhost:8080/Java_GS_Poseidon/rest/ong", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

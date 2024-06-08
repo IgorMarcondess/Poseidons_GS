@@ -47,4 +47,5 @@ Em caso de erro do Node, executar o comando " NPM INSTALL NODE "
 Em caso de css desconfigurado, aumentar o zoom do site de 150% 
 
 Link do youtube: https://www.youtube.com/watch?v=2nNDQaYxcxo
+
 Link Vercel: https://poseidons-gs.vercel.app/Pagina_inicial

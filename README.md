@@ -31,6 +31,8 @@ React: Biblioteca JavaScript para construção de interfaces de usuário.
 
 Next.js: Framework React para construção de aplicações web rápidas e escaláveis.
 
+JavaScript: Linguagem de programação versátil para desenvolvimento web dinâmico e interativo.
+
 ## Instruções de Instalação
 ### Pré-requisitos
 Node.js

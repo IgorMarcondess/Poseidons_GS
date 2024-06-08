@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Visão Geral
+## Bem-vindo à nossa solução de gestão para ONGs, focada em quatro pilares principais:
 
-## Getting Started
+Captação de Novos Colaboradores
+Gestão Eficiente dos Colaboradores
+Facilitação de Denúncias
+Disseminação de Informações
 
-First, run the development server:
+Nosso objetivo é proporcionar uma plataforma robusta que permita às ONGs atrair novos colaboradores de forma contínua e sistematizada. O sistema de gestão de colaboradores será projetado para ser altamente eficiente, permitindo que as ONGs administrem suas equipes de forma ágil e organizada. Além disso, a plataforma incluirá um canal dedicado para denúncias, onde os usuários poderão reportar casos de poluição e destruição marinha.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# Funcionalidades
+## 1. Captação de Novos Colaboradores
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Cadastro Simplificado: Utilização da API Viacep para facilitar o preenchimento de endereços durante o cadastro.
+Perfil de Colaborador: Criação e gestão de perfis detalhados de colaboradores, permitindo que as ONGs encontrem rapidamente pessoas com habilidades específicas.
+## 2. Gestão de Colaboradores
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Painel de Administração: Interface intuitiva para que as ONGs possam gerenciar seus colaboradores de forma eficiente.
+Atribuição de Tarefas: Ferramentas para designar tarefas específicas a colaboradores ou equipes.
+Monitoramento de Atividades: Rastreamento e relatório das atividades realizadas pelos colaboradores.
+## 3. Facilitação de Denúncias
+Canal de Denúncias: Plataforma para que os usuários possam reportar incidentes de poluição e destruição marinha.
+Resposta Rápida: Notificação imediata das ONGs sobre novas denúncias e localização de colaboradores na área afetada para uma resposta inicial eficaz.
+## 4. Disseminação de Informações
+Publicação de Notícias: Espaço para que as ONGs compartilhem atualizações, campanhas e informações importantes com seus colaboradores e o público geral.
+Alertas e Notificações: Sistema de envio de alertas para manter todos os membros informados sobre novidades e ações emergenciais.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Tecnologias Utilizadas
+## Front-end
+React: Biblioteca JavaScript para construção de interfaces de usuário.
 
-## Learn More
+Next.js: Framework React para construção de aplicações web rápidas e escaláveis.
 
-To learn more about Next.js, take a look at the following resources:
+## Instruções de Instalação
+### Pré-requisitos
+Node.js
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+npm (Node Package Manager)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# Utilitários
+Em caso de problema no arquivo, entrar no console e inserir o código "npm i" 
 
-## Deploy on Vercel
+Em caso de erro abrir o terminal e execcutar o comando " NPM INSTALL "
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Em caso de erro do Node, executar o comando " NPM INSTALL NODE "
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Em caso de css desconfigurado, aumentar o zoom do site de 150% 
+
+Link do youtube: https://www.youtube.com/watch?v=2nNDQaYxcxo
+Link Vercel: https://poseidons-gs.vercel.app/Pagina_inicial
